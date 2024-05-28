@@ -86,7 +86,7 @@
             </div>
             <div class="cancle-add">
                 <button class="cancle-btn">Cancle</button>
-                <button class="addforce1">Add</button>
+                <button class="addforce1" onclick= "handleAddForce()">Add</button>
             </div>
         </div>
         <!-- Load2 -->
@@ -107,7 +107,7 @@
             </div>
             <div class="cancle-add">
                 <button class="cancle-btn">Cancle</button>
-                <button class="addforce2">Add</button>
+                <button class="addforce2" onclick="handleMoment()">Add</button>
             </div>
         </div>
         <!-- load3 -->
@@ -119,7 +119,7 @@
             </div>
             <div class="cancle-add">
                 <button class="cancle-btn">Cancle</button>
-                <button class="addforce3">Add</button>
+                <button class="addforce3" onclick="handleAddForce2()">Add</button>
             </div>
         </div>
         <!-- Load4 -->
@@ -131,7 +131,7 @@
             </div>
             <div class="cancle-add">
                 <button class="cancle-btn">Cancle</button>
-                <button class="addforce4">Add</button>
+                <button class="addforce4" onclick="handleAddForce3()">Add</button>
             </div>
         </div>
         <div class="canvas">
@@ -159,7 +159,9 @@
             <div class="Tri"><img src="" alt=""></div>
             <div class="TriMax"></div>
         </div>
+        <button  class="calculate" onclick="Calculate()"><ion-icon style="font-size: 25px; position: relative; top: 10%;" name="calculator-outline"></ion-icon><span class="text">Calculate</span></button>
         <script src="/internal.js"></script>
+        <script src="/calculate.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
