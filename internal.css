@@ -2,6 +2,7 @@ body {
     margin-top: 0;
     margin-left: 0;
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .containerinput {
@@ -376,7 +377,7 @@ input[type="number"] {
 
 .Magnitude{
     position: absolute;
-    top: 42%;
+    top: 26%;
     left: 410px;
     display: flex;
     font-size: 20px;
@@ -470,4 +471,30 @@ input[type="number"] {
 }
 .textposition{
     text-align: center;
+}
+
+.result-container{
+    position: absolute;
+    top: 62%;
+    left: 25%;
+    font-size: 30px;
+    
+}
+
+
+.result{
+    position: absolute;
+    top: 72%;
+    left: 30%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.result p {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }

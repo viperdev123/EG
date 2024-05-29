@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var load4 = document.querySelector(".Load4");
 
   // Get all the Cancel buttons
-  var cancelButtons = document.querySelectorAll(".cancle-add button");
+  var cancelButtons = document.querySelectorAll(".cancle-btn");
 
   // Function to hide all Load divs
   function hideAllLoadDivs() {
@@ -359,7 +359,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var momentInput = document.querySelector(".Moment-input");
     var momentImageDiv = document.querySelector(".Moment img");
     var BLengthInput = document.querySelector(".BLength");
-    var cancelButtons = document.querySelectorAll(".cancle-add button");
+    var cancelButtons = document.querySelectorAll(".cancle-btn");
     var squareInput = document.querySelector(".square-input");
     var squareImage = document.querySelector(".square img");
     var squareMaxDiv = document.querySelector(".SquareMax");
@@ -655,4 +655,19 @@ document.addEventListener("DOMContentLoaded", function () {
     bxImage.style.display = bxDisplay;
     byImage.style.display = byDisplay;
   }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all the list items
+  const listItems = document.querySelectorAll("ul li");
+
+  // Add click event listener to each list item
+  listItems.forEach(function(item) {
+      item.addEventListener("click", function() {
+          // Hide Load sections
+          document.querySelectorAll('.Load1, .Load2, .Load3, .Load4').forEach(function(load) {
+              load.style.display = "none";
+          });
+      });
+  });
 });
