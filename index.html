@@ -17,10 +17,10 @@
             <li style="float:right"><a>Loads</a></li>
         </ul>
         <div class="Length" style="display: block;">
-            <h3>Beam Length:</h3>
+            <h3>Beam Length (m):</h3>
             <input class="BLength" type="number" value="10">
-            <h3>Length Unit:</h3>
-            <select class="ULength" name="dropdown">
+            <h3 style="display: none;">Length Unit:</h3>
+            <select style="display: none;" class="ULength" name="dropdown">
                 <option value="m_m">Millimeter (mm)</option>
                 <option value="c_m">Centimeter (cm)</option>
                 <option value="d_m">Decimeter (dm)</option>
@@ -29,10 +29,10 @@
                 <option value="yd">Yard (yd)</option>
                 <option value="ft">Foot (ft)</option>
             </select>
-            <h3>Force Unit:</h3>
-            <select class="FUnit" name="dropdown">
-                <option value="N">Newton (N)</option>
-                <option value="k_N" selected="">Kilonewton (kN)</option>
+            <h3 style="display: none;">Force Unit:</h3>
+            <select style="display: none;" class="FUnit" name="dropdown">
+                <option value="N" selected="">Newton (N)</option>
+                <option value="k_N">Kilonewton (kN)</option>
                 <option value="M_N">Meganewton (MN)</option>
                 <option value="gs">Gram-force (gf)</option>
                 <option value="k_gs">Kilogram-force (kgF)</option>
@@ -68,11 +68,11 @@
         <div class="Load1" style="display: none;">
             <div class="textposition">Adding a Point Load</div>
             <div class="position-container">
-                <div>Position</div>
+                <div>Position (m)</div>
                 <input class="position-input" type="number">
             </div>
             <div class="position-container">
-                <div>Load Magnitude</div>
+                <div>Load Magnitude (N)</div>
                 <input class="force-input" type="number">
                 <div style="display:  none;" class="button-container2">
                     <button class="up"><ion-icon name="arrow-up-outline"></ion-icon></button>
@@ -93,11 +93,11 @@
         <div class="Load2" style="display: none;">
             <div class="textposition">Adding Bending Moment</div>
             <div class="position-container">
-                <div>Position</div>
+                <div>Position (m)</div>
                 <input class="position-input2" type="number">
             </div>
             <div class="position-container">
-                <div>Moment Magnitude<br> (kN*m):</div>
+                <div>Moment Magnitude<br> (N*m):</div>
                 <input class="Moment-input" type="number">
                 <div style="display: none;" class="button-container3">
                     <button class="cw"><ion-icon name="refresh-outline"></ion-icon></button>
@@ -114,7 +114,7 @@
         <div class="Load3" style="display: none;">
             <div class="textposition">Adding a Uniformly Distributed Load</div>
             <div class="position-container">
-                <div>Load Magnitude</div>
+                <div>Load Magnitude (N)</div>
                 <input class="square-input" type="number">
             </div>
             <div class="cancle-add">
@@ -126,7 +126,7 @@
         <div class="Load4" style="display: none;">
             <div class="textposition">Adding a Triangular Load</div>
             <div class="position-container">
-                <div>End Magnitude</div>
+                <div>End Magnitude (N) </div>
                 <input class="Tri-input" type="number">
             </div>
             <div class="cancle-add">
